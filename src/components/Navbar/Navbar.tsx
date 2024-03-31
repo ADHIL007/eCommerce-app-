@@ -60,7 +60,7 @@ function Navbar() {
           </li>
           <li className="navbar-item">
             <Link
-              to="/user"
+              to="/users"
               className={
                 location.pathname === "/users"
                   ? "navbar-link navbar-link-active"

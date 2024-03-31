@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 import CategoriesBox from "../../components/categoryGrids/CategoriesBox";
-import ProductCard from "../../components/Products/Products";
+import ProductCard from "../../components/ProductCard/ProductCard";
 import { Link } from "react-router-dom";
 
 interface Product {
@@ -109,11 +109,13 @@ function Home() {
         </select>
       </div>
 
-
       <div className="home-products">
         {sortedProducts.length === 0 ? (
           <div className="no-products">
-          <h3 className="no-products-message">No products match the selected category.</h3></div>
+            <h3 className="no-products-message">
+              No products match the selected category.
+            </h3>
+          </div>
         ) : (
           sortedProducts.map((product, index) => (
             <div key={index}>

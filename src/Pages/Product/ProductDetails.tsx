@@ -87,11 +87,6 @@ function ProductDetails() {
     <div className="product-details-container">
       <div className="product-details-image">
         <img src={currentImage} alt={title} />
-      </div>
-      <div className="product-details-info">
-        <h2>{title}</h2>
-        <p className="price">${price}</p>
-        <p className="description">{description}</p>
         <div className="product-details-thumbnails">
           {images.map((image, index) => (
             <img
@@ -103,6 +98,12 @@ function ProductDetails() {
             />
           ))}
         </div>
+      </div>
+      <div className="product-details-info">
+        <h2>{title}</h2>
+        <p className="price">${price}</p>
+        <p className="description">{description}</p>
+
 
         <Button
           variant="contained"

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import ProductCard from '../../components/Products/Products';
+import ProductCard from '../../components/ProductCard/ProductCard';
 
 interface Product {
   id: number;
