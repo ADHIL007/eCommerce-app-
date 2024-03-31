@@ -3,6 +3,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 15px 0;
   overflow: hidden;
+
 }
 
 .container {
@@ -40,6 +41,9 @@
   color: #4bcffa;
 }
 
+.navbar-link-active {
+  color: #4bcffa;
+}
 .navbar-actions {
   display: flex;
   align-items: center;
@@ -66,25 +70,26 @@
   .navbar-toggle {
     display: block;
   }
-  .navbar-actions{
+  .navbar-actions {
     margin-right: 5%;
     transition: all 0.3s ease;
   }
-  .navbar-links{
+  .navbar-links {
+    z-index: 10;
     position: absolute;
     transition: all 0.3s ease;
     background-color: #ffffff;
-    top: 13%;
+    top: 9.5%;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
-   padding-top: 50px;
+    padding-top: 50px;
     transform: translateX(-100%);
   }
 }
-.collapse-active{
-transform: translateX(0);
+.collapse-active {
+  transform: translateX(0);
 }
