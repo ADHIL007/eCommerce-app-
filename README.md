@@ -6,7 +6,7 @@ This project is a ReactJS eCommerce application built using TypeScript and style
 
 ## Installation
 
-To run the Todo List app locally, follow these steps:
+To run the Ecommerce-app app locally, follow these steps:
 
 1. Clone the repository to your local machine:
 
